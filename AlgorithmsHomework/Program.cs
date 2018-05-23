@@ -10,9 +10,21 @@ namespace AlgorithmsHomework
     {
         static void Main(string[] args)
         {
-            int[] myArray = { 1, 2, 3, 4, 5 };
-            Exercise1(myArray);
-            Exercise1b(myArray);
+            //int[] myArray = { 1, 2, 3, 4, 5 };
+            //Exercise1(myArray);
+            //Exercise1b(myArray);
+
+
+            var myStudents = new Students();
+            myStudents.AddName("Alie");
+            myStudents.AddName("Ingrid");
+            myStudents.AddName("Samual");
+
+            foreach (string name in myStudents)
+            {
+                Console.WriteLine(name);
+            }
+
 
             Console.ReadLine();
         }
